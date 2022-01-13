@@ -13,7 +13,7 @@
     <br>
     <table align=top>
         <tr>
-            <td><b><u>index-active.jsp</u></b></td><td><b><u>index-passive.jsp</u></b></td>
+            <td><b><a href="index-active.jsp">index-active.jsp</a></b></td><td><b><a href="index-passive.jsp">index-passive.jsp</a></b></td>
         </tr>
         <tr>
             <td valign=top>
@@ -33,10 +33,10 @@
     </table>
     <br>
     <br>
-    <b><u>Notes</u></b><br>
+    <b>Notes</b><br>
     Make sure you install the database using the auto-installer, <br>
     and according to the instructions provided at the WAVSEP Google Code home page.<br>
-    <b><u>Known Issues</u></b><br>
+    <b>Known Issues</b><br>
     Previous versions of wavsep might require the web server to run with admin/root permissions (for the database installation script),<br>
     due to the usage of a derby database created in a default location.
 </body>
