@@ -11,7 +11,7 @@
     The index page of the project intentionally lacks links and forms.<br>
     Please access the following index pages to perform specific tests:<br>
     <br>
-    <table align=top>
+    <table>
         <tr>
             <td><b><a href="index-active.jsp">index-active.jsp</a></b></td><td><b><a href="index-passive.jsp">index-passive.jsp</a></b></td>
         </tr>
