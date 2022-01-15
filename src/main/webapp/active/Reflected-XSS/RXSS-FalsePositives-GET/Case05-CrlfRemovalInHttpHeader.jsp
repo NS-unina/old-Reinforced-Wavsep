@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<%@ page import="com.sectooladdict.encoders.HtmlEncoder" %>
+<%@ page import="com.nsunina.wavsepenhancement.encoders.HtmlEncoder" %>
 <%
 if (request.getParameter("userinput") != null) {
     try {

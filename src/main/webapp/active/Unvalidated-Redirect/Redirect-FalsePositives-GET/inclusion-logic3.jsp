@@ -1,7 +1,7 @@
-<%@page import="com.sectooladdict.enums.PrefixRequirement"%>
-<%@page import="com.sectooladdict.enums.VulnerabilityType"%>
-<%@page import="com.sectooladdict.constants.FileConstants"%>
-<%@page import="com.sectooladdict.validators.InputValidator"%>
+<%@page import="com.nsunina.wavsepenhancement.enums.PrefixRequirement"%>
+<%@page import="com.nsunina.wavsepenhancement.enums.VulnerabilityType"%>
+<%@page import="com.nsunina.wavsepenhancement.constants.FileConstants"%>
+<%@page import="com.nsunina.wavsepenhancement.validators.InputValidator"%>
 
 
 	<%

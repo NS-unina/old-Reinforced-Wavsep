@@ -1,5 +1,5 @@
-<%@page import="com.sectooladdict.enums.FileAccessRestriction"%>
-<%@page import="com.sectooladdict.validators.InputValidator"%>
+<%@page import="com.nsunina.wavsepenhancement.enums.FileAccessRestriction"%>
+<%@page import="com.nsunina.wavsepenhancement.validators.InputValidator"%>
 
 	<%
 		//First set the prefix according to the path type

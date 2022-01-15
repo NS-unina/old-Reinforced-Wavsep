@@ -1,6 +1,6 @@
-<%@page import="com.sectooladdict.enums.VulnerabilityType"%>
-<%@page import="com.sectooladdict.constants.FileConstants"%>
-<%@page import="com.sectooladdict.validators.InputValidator"%>
+<%@page import="com.nsunina.wavsepenhancement.enums.VulnerabilityType"%>
+<%@page import="com.nsunina.wavsepenhancement.constants.FileConstants"%>
+<%@page import="com.nsunina.wavsepenhancement.validators.InputValidator"%>
 
 	<%
 		//First set the prefix according to the path type

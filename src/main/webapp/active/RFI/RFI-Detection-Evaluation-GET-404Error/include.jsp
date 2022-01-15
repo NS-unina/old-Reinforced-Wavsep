@@ -1,18 +1,18 @@
 <%@page import="java.io.*" %>
 <%@page import="java.net.*" %>
-<%@page import="com.sectooladdict.encoders.HtmlEncoder" %>
-<%@page import="com.sectooladdict.constants.SystemConstants" %>
-<%@page import="com.sectooladdict.constants.FileConstants" %>
-<%@page import="com.sectooladdict.constants.ContentConstants" %>
-<%@page import="com.sectooladdict.enums.VulnerabilityType" %>
-<%@page import="com.sectooladdict.enums.ResponseType" %>
-<%@page import="com.sectooladdict.enums.DefaultInputType" %>
-<%@page import="com.sectooladdict.enums.FileAccessMethod" %>
-<%@page import="com.sectooladdict.enums.FileAccessRestriction" %>
-<%@page import="com.sectooladdict.enums.FileInjectionContext" %>
-<%@page import="com.sectooladdict.enums.PrefixRequirement" %>
-<%@page import="com.sectooladdict.enums.OsType" %>
-<%@page import="com.sectooladdict.enums.PathType" %>
+<%@page import="com.nsunina.wavsepenhancement.encoders.HtmlEncoder" %>
+<%@page import="com.nsunina.wavsepenhancement.constants.SystemConstants" %>
+<%@page import="com.nsunina.wavsepenhancement.constants.FileConstants" %>
+<%@page import="com.nsunina.wavsepenhancement.constants.ContentConstants" %>
+<%@page import="com.nsunina.wavsepenhancement.enums.VulnerabilityType" %>
+<%@page import="com.nsunina.wavsepenhancement.enums.ResponseType" %>
+<%@page import="com.nsunina.wavsepenhancement.enums.DefaultInputType" %>
+<%@page import="com.nsunina.wavsepenhancement.enums.FileAccessMethod" %>
+<%@page import="com.nsunina.wavsepenhancement.enums.FileAccessRestriction" %>
+<%@page import="com.nsunina.wavsepenhancement.enums.FileInjectionContext" %>
+<%@page import="com.nsunina.wavsepenhancement.enums.PrefixRequirement" %>
+<%@page import="com.nsunina.wavsepenhancement.enums.OsType" %>
+<%@page import="com.nsunina.wavsepenhancement.enums.PathType" %>
 
 <%
 //set debug flag from main config
