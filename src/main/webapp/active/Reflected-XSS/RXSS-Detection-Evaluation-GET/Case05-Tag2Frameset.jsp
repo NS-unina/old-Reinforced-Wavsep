@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -26,12 +25,11 @@ else {
 <frame name="frame1" id="frame1" src="dummy.html">
 <%	
     try {
-	  	    String userinput = request.getParameter("userinput"); 
-     		out.println("<frame name=\"frame2\" id=\"frame2\" src=\""
-     			+ userinput +"\"> ");
-	  	    out.flush();
+		String userinput = request.getParameter("userinput");
+     	out.println("<frame name=\"frame2\" id=\"frame2\" src=\"" + userinput +"\"> ");
+		out.flush();
     } catch (Exception e) {
-        out.println("Exception details: " + e);
+		out.println("Exception details: " + e);
     }
 } //end of if/else block
 %>
