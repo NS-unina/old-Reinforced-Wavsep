@@ -1,5 +1,5 @@
-<%@ page contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<%@ page contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Evaluation of Reflected XSS Detection Accuracy - HTTP POST Method</title>
@@ -82,6 +82,7 @@ Injection of tags to the scope of an HTML tag.<br>
   Auto Executed Exploit: a&quot; onerror=&quot;document&#46;title=document&#46;domain;<br>
   IE Style Exploit: a&quot; style=&quot;width: expression&#40;document&#46;title=document&#46;domain&#41;;<br>
   <br>
+  Can be tested only on IE
 <B><a href="Case07-Event2DoubleQuotePropertyScope.jsp">Case07-Event2DoubleQuotePropertyScope.jsp</a></B><br>
   Injection of events/properties to the scope of an HTML property (Double Quote Delimiter) .<br>
   <U>Barriers:</U><br>

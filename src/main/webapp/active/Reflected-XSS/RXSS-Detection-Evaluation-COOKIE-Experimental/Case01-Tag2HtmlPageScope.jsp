@@ -2,8 +2,8 @@
 TODO: comprendere che vuole fare e correggere il bug. Inoltre, connector non pare essere usato
 <%@ page import="org.apache.catalina.connector.Connector"%>
 -->
-<%@ page contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<%@ page contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Case 1 - RXSS via tag injection into the scope of an HTML page (Cookie Input Vector)</title>
