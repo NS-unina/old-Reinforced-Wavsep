@@ -171,6 +171,7 @@ Injection of tags to the scope of an HTML tag.<br>
   <U>Examples:</U><br>
   Exploit: John&#39;%0A%0D MsgBox 'xss<br>
   Independent Exploit: John&#39;%0A%0D MsgBox 'xss'%0A%0DRem aa <br>
+  Can be tested only on IE
   <br>
 <B><a href="Case14-Vbs2SingleQuoteVbsEventScope.jsp?userinput=textvalue">Case14-Vbs2SingleQuoteVbsEventScope.jsp</a></B><br>
   Injection of VBScript to the scope of an HTML/VBScript event (Single Quote Delimiter).<br>
@@ -183,6 +184,7 @@ Injection of tags to the scope of an HTML tag.<br>
   <U>Examples:</U><br>
   Exploit: John&quot;%0A%0D MsgBox "xss<br>
   Independent Exploit: John&quot;%0A%0D MsgBox "xss"%0A%0DRem aa <br>
+  Can be tested only on IE
   <br>
 <B><a href="Case15-Vbs2VbsEventScope.jsp?userinput=1234">Case15-Vbs2VbsEventScope.jsp</a></B><br>
   Injection of VBScript to the scope of an HTML/VBScript event (Any Delimiter).<br>
@@ -196,6 +198,7 @@ Injection of tags to the scope of an HTML tag.<br>
   <U>Examples:</U><br>
   Exploit: 1234%0A%0D MsgBox Document.Domain<br>
   Independent Exploit: 1234%0A%0D MsgBox Document.Domain%0A%0DRem aa <br>
+  Can be tested only on IE
   <br>
 <B><a href="Case16-Js2ScriptSupportingProperty.jsp?userinput=dummy.html">Case16-Js2ScriptSupportingProperty.jsp</a></B><br>
   Injection of Javascript into the scope of a script supporting property.<br>
@@ -253,6 +256,7 @@ Injection of tags to the scope of an HTML tag.<br>
   value"[CrLf][exploit code]<br>
   <U>Examples:</U><br>
   Exploit (URL Encoded): aa%22%20%26%20msgbox(%22exploit%22)%20%26%20%22aa<br>
+  Can be tested only on IE
   <br>
 <B><a href="Case21-Vbs2PropertyVbsScope.jsp?userinput=david">Case21-Vbs2PropertyVbsScope.jsp</a></B><br>
   Injection of VBScript into the scope of VBScript code within property (No String Delimiter).<br>
@@ -263,6 +267,7 @@ Injection of tags to the scope of an HTML tag.<br>
   value'[CrLf][exploit code]<br>
   <U>Examples:</U><br>
   Exploit (Replace the input): msgbox (document.domain) <br>
+  Can be tested only on IE
   <br>
 <B><a href="Case22-Js2ScriptTagDoubleQuoteDelimiter.jsp?userinput=david">Case22-Js2ScriptTagDoubleQuoteDelimiter.jsp</a></B><br>
   Injection of Javascript into the scope of a script tag (Javascript, Double Quote String Delimiter).<br>
@@ -307,6 +312,7 @@ Injection of tags to the scope of an HTML tag.<br>
   value"[CrLf][exploit code]<br>
   <U>Examples:</U><br>
   Exploit: david"%0A%0Dmsgbox "exploit <br>
+  Can be tested only on IE
   <br>
 <B><a href="Case26-Vbs2ScriptTag.jsp?userinput=1234">Case26-Vbs2ScriptTag.jsp</a></B><br>
   Injection of VBScript into the scope of a script tag (VBScript, No String Delimiter).<br>
@@ -318,6 +324,7 @@ Injection of tags to the scope of an HTML tag.<br>
   value[CrLf][exploit code]<br>
   <U>Examples:</U><br>
   Exploit: 1234%0A%0Dmsgbox document.domain%0A%0D <br>
+  Can be tested only on IE
   <br>
 <B><a href="Case27-Js2ScriptTagOLCommentScope.jsp?userinput=1234">Case27-Js2ScriptTagOLCommentScope.jsp</a></B><br>
   Injection of Javascript into the scope of a script tag single line comment.<br>
@@ -346,6 +353,7 @@ Injection of tags to the scope of an HTML tag.<br>
   [CrLf][exploit code]<br>
   <U>Examples:</U><br>
   Exploit: 1234%0A%0Dmsgbox document.domain%0A%0D <br>
+  Can be tested only on IE
   <br>
 <B><a href="Case30-Tag2HtmlPageScopeMultipleVulnerabilities.jsp?userinput=1234&userinput2=1234">Case30-Tag2HtmlPageScopeMultipleVulnerabilities.jsp</a></B><br>
   Injection of tags to the scope of the HTML page (Multiple RXSS Vulnerabilities).<br>
