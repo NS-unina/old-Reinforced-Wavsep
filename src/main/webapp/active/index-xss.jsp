@@ -23,6 +23,15 @@
 <br><b>ReflectedXSS POST Input Vector - Experimental Test Cases: Tag Stripping / Secret Input Vectors / Scriptless Exploits / Other</b><br>
 <a href="Reflected-XSS/RXSS-Detection-Evaluation-POST-Experimental/index.jsp">Evaluation of RXSS Detection Accuracy - POST</a><br><br>
 
+<br><b>Nuovi contenuti GET</b><br>
+<a href="Reflected-XSS/RXSS-New-Contexts-GET/index.jsp">Evaluation of RXSS Detection Accuracy - GET</a><br><br>
+
+<br><b>Nuovi contenuti POST</b><br>
+<a href="Reflected-XSS/RXSS-New-Contexts-POST/index.jsp">Evaluation of RXSS Detection Accuracy - GET</a><br><br>
+
+<br><b>WebSecLab</b><br>
+<a href="Reflected-XSS/RXSS-WebSecLab-GET/index.jsp">Evaluation of RXSS Detection Accuracy</a><br><br>
+
 <br><b>DomXSS GET Input Vector - Experimental Test Cases</b><br>
 <a href="DOM-XSS/DXSS-Detection-Evaluation-GET-Experimental/index.jsp">Evaluation of RXSS Detection Accuracy - GET</a><br><br>
 
