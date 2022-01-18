@@ -16,7 +16,7 @@
 if (request.getParameter("msg") == null) {
 %>
 	Enter your name:<br><br>
-	<form name="frmInput" id="frmInput" action="Case02-Command-Injection-Blind-TimeDelay.jsp?image=/wavsep/images/wavsep-logo.jpeg" method="POST">
+	<form name="frmInput" id="frmInput" action="Case02-Command-Injection-Blind-TimeDelay.jsp?image=/wavsep_enhancement_war_exploded/images/wavsep-logo.jpeg" method="POST">
 		<input type="text" name="msg" id="msg"><br>
 		<input type=submit value="submit">
 	</form>
