@@ -27,7 +27,7 @@
 <a href="Reflected-XSS/RXSS-New-Contexts-GET/index.jsp">Evaluation of RXSS Detection Accuracy - GET</a><br><br>
 
 <br><b>Nuovi contenuti POST</b><br>
-<a href="Reflected-XSS/RXSS-New-Contexts-POST/index.jsp">Evaluation of RXSS Detection Accuracy - GET</a><br><br>
+<a href="Reflected-XSS/RXSS-New-Contexts-POST/index.jsp">Evaluation of RXSS Detection Accuracy - POST</a><br><br>
 
 <br><b>WebSecLab</b><br>
 <a href="Reflected-XSS/RXSS-WebSecLab-GET/index.jsp">Evaluation of RXSS Detection Accuracy</a><br><br>
