@@ -47,7 +47,7 @@ public class FileConstants {
      * (both file:/ and file:// are valid) 
      * @since 1.2
      */
-	public static final String FILE_PREFIX = "file:/"; //remove / for linux
+	public static final String FILE_PREFIX = "file://"; //remove / for linux
 	
 	
 	//*************************
