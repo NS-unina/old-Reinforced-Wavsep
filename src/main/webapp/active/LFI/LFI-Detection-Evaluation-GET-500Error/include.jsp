@@ -96,7 +96,12 @@ String currentFilePath = request.getRealPath(request.getServletPath());
 String currentDirPath = request.getRealPath(
 		(request.getServletPath()).split("/Case")[0]);
 //Web Path of Root - Relative
-String contextPath = this.getServletContext().getContextPath();
+//String contextPath = this.getServletContext().getContextPath();
+
+
+ServletContext qualcosa = getServletConfig().getServletContext();
+String contextPath = qualcosa.getContextPath();
+
 //Web Path of File - Relative and *NOT* including ROOT (!)
 String contextPathFile = request.getServletPath();
 //Web Path of Dir - Relative and *NOT* including ROOT or File Delimiter(!)
@@ -147,10 +152,10 @@ if (debugMode == true) {
 		    + FontEnd + directory.getCanonicalPath() + BR); 
 	   	System.out.println ("Current directory's absolute path: " 
 	   		+ directory.getAbsolutePath());
-	   	out.println (FontStart + "Current directory's absolute  path: " 
+	   	out.println (FontStart + "Current directory's absolute path: "
 	   	    + FontEnd + directory.getAbsolutePath() + BR);
 	} catch(Exception e) {
-		System.out.println("Exceptione is =" + e.getMessage());
+		System.out.println("Exception is =" + e.getMessage());
 	}
 	
 	out.println(BR + BR);
