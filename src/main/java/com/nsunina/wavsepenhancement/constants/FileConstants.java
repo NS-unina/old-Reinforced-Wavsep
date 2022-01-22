@@ -79,7 +79,7 @@ public class FileConstants {
      * This constant is used to store an invalid file name,
      * @since 1.2
      */
-	public static final String DEFAULT_TARGET_FILE_ROOT_DIR = "boot.ini";
+	public static final String DEFAULT_TARGET_FILE_ROOT_DIR = "passwd";
 	
     //********************************
     //* FILE SUFFIX/PREFIX CONSTANTS *
