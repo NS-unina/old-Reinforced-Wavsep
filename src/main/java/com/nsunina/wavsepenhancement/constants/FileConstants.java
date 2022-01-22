@@ -57,7 +57,7 @@ public class FileConstants {
      * This constant is used to store the default target filename. 
      * @since 1.2
      */
-	public static final String DEFAULT_TARGET_FILE = "content.ini";
+	public static final String DEFAULT_TARGET_FILE = "default.txt";
 	/**
      * This constant is used to store the default target filename,
      * when the default location is not in the jsp directory. 
