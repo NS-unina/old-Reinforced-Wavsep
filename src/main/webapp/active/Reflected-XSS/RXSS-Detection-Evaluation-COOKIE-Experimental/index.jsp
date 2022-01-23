@@ -45,10 +45,7 @@ if (cookies != null) {
   &lt;input type=text [dhtmlevent]=&quot;[code]&quot;&gt;<br>
   &lt;[customtag] style=&quot;width: expression&#40;[exploit code]&#41;;&quot;&gt;<br>
   <U>Examples:</U><br>
-  Exploit: &#60;script&#62;document&#46;title&#61;&#34;Exploit&#34;&#59;&#60;&#47;script&#62;<br>
-  Silent Exploit: &lt;img src=&quot;a&quot; onerror=&quot;javascript:document&#46;title=document&#46;domain&quot;&gt;<br>
-  IE Custom Tag Exploit: &lt;sectooladdict style=&quot;width: expression&#40;document&#46;title=document&#46;domain&#41;;&quot;&gt;<br>
-  <br>
-  
+  Exploit: &lt;script&gt;alert(1)&lt;/script&gt; <br>
+
 </body>
 </html>

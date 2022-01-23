@@ -2604,7 +2604,7 @@
   <br>
   
 
-  <B><a href="Case61-LFI-ContextStream-FilenameContext-SlashTraversalRemoval-OSPath-DefaultFullInput-AnyPathReq-Read.jsp?target=<%=((contextRelativeDirPath.replace("index.jsp","")).replace("/","\\") + FileConstants.DEFAULT_TARGET_FILE)%>">
+  <B><a href="Case61-LFI-ContextStream-FilenameContext-SlashTraversalRemoval-OSPath-DefaultFullInput-AnyPathReq-Read.jsp?target=<%=((contextRelativeDirPath.replace("index.jsp","")) + FileConstants.DEFAULT_TARGET_FILE)%>">
    Case61-LFI-ContextStream-FilenameContext-SlashTraversalRemoval-OSPath-DefaultFullInput-AnyPathReq-Read.jsp</a></B><br>
   LFI attack abusing the getContextStream servlet method: injection into a filename context, using an OS path with slash removal, default full path input, without path requirements, and in the scope of a page with valid responses.<br>
   Clarification: The getContextStream servlet method is partially restricted from accessing OS files outside the application context (<B>permissions simulation</B>).<br>
@@ -2866,7 +2866,7 @@
   <br>
   
   
-  <B><a href="Case67-LFI-ContextStream-FilenameContext-UnixTraversalRemoval-OSPath-DefaultFullInput-BackslashPathReq-Read.jsp?target=<%= "\\" + FileConstants.DEFAULT_TARGET_FILE %>">
+  <B><a href="Case67-LFI-ContextStream-FilenameContext-UnixTraversalRemoval-OSPath-DefaultFullInput-BackslashPathReq-Read.jsp?target=<%= "/" + FileConstants.DEFAULT_TARGET_FILE %>">
   Case67-LFI-ContextStream-FilenameContext-UnixTraversalRemoval-OSPath-DefaultFullInput-BackslashPathReq-Read.jsp</a></B><br>
   LFI attack abusing the getContextStream servlet method: injection into a filename context, using an OS path with unix traversal removal, default full path input, with backslash prefix requirement (no application full path support), and in the scope of a page with valid responses.<br>
   Clarification: The test case concatenates a default full path prefix with a missing backslash char ("\") to the input received - preventing the direct injection of full application path (without traversal characters).<br>
@@ -2911,7 +2911,7 @@
   <br>
   
   
-  <B><a href="Case68-LFI-ContextStream-FilenameContext-WindowsTraversalRemoval-OSPath-DefaultFullInput-BackslashPathReq-Read.jsp?target=<%= "\\" + FileConstants.DEFAULT_TARGET_FILE %>">
+  <B><a href="Case68-LFI-ContextStream-FilenameContext-WindowsTraversalRemoval-OSPath-DefaultFullInput-BackslashPathReq-Read.jsp?target=<%= "/" + FileConstants.DEFAULT_TARGET_FILE %>">
   Case68-LFI-ContextStream-FilenameContext-WindowsTraversalRemoval-OSPath-DefaultFullInput-BackslashPathReq-Read.jsp</a></B><br>
   LFI attack abusing the getContextStream servlet method: injection into a filename context, using an OS path with windows traversal removal, default full path input, with backslash prefix requirement (no application full path support), and in the scope of a page with valid responses.<br>
   Clarification: The test case concatenates a default full path prefix with a missing backslash char ("\") to the input received - preventing the direct injection of full application path (without traversal characters).<br>
