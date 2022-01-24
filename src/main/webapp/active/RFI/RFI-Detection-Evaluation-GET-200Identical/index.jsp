@@ -17,7 +17,7 @@
 
 <center><font size="5">RFI Test Cases - HTTP 200 Responses with Default Valid Content:</font></center><br><br>
 
-  <B><a href="Case01-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultFullInput-AnyPathReq-Read.jsp?target=<%=baseURL + FileConstants.DEFAULT_TARGET_FILE%>">
+  <B><a href="Case01-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultFullInput-AnyPathReq-Read.jsp?target=<%=baseURL + FileConstants.DEFAULT_TARGET_FILE_INVALID%>">
    Case01-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultFullInput-AnyPathReq-Read.jsp</a></B><br>
   RFI attack abusing the URL Class: injection into a filename context, using an unrestricted HTTP URL, default full path input, without path requirements, and in the scope of a page with default valid responses.<br>
   
@@ -60,7 +60,7 @@
   <br>
   
   
-  <B><a href="Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp?target=<%=FileConstants.DEFAULT_TARGET_FILE%>">
+  <B><a href="Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp?target=<%=FileConstants.DEFAULT_TARGET_FILE_INVALID%>">
    Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp</a></B><br>
   RFI attack abusing the URL Class: injection into a filename context, using an unrestricted HTTP URL, default full path input, without path requirements, and in the scope of a page with default valid responses.<br>
   
@@ -189,7 +189,7 @@
   <br>
   
   
-  <B><a href="Case05-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultFullInput-NoProtocolReq-Read.jsp?target=<%=baseUrlWithoutProtocol + FileConstants.DEFAULT_TARGET_FILE %>">
+  <B><a href="Case05-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultFullInput-NoProtocolReq-Read.jsp?target=<%=baseUrlWithoutProtocol + FileConstants.DEFAULT_TARGET_FILE_INVALID %>">
    Case05-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultFullInput-NoProtocolReq-Read.jsp</a></B><br>
   RFI attack abusing the URL Class: injection into a filename context, using an unrestricted HTTP URL, default full path input, without application full path support (no-path requirement), and in the scope of a page with default valid responses.<br>
   Clarification: The test case concatenates a default full path prefix to the input received - preventing the direct injection of full application path (without traversal characters)<br>
@@ -321,7 +321,7 @@
   <br>
   
   
-    <B><a href="Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp?target=<%=FileConstants.DEFAULT_TARGET_FILE%>">
+    <B><a href="Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp?target=<%=FileConstants.DEFAULT_TARGET_FILE_INVALID%>">
    Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp</a></B><br>
   RFI attack abusing the URL Class: injection into a filename context, using an HTTP URL with flawed http text validation, default full path input, without path requirements, and in the scope of a page with default valid responses.<br>
   
@@ -364,7 +364,7 @@
   <br>
   
   
-  <B><a href="Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp?target=<%=FileConstants.DEFAULT_TARGET_FILE%>">
+  <B><a href="Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp?target=<%=FileConstants.DEFAULT_TARGET_FILE_INVALID%>">
    Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp</a></B><br>
   RFI attack abusing the URL Class: injection into a filename context, using an HTTP URL with flawed http text removal, default full path input, without path requirements, and in the scope of a page with default valid responses.<br>
   
