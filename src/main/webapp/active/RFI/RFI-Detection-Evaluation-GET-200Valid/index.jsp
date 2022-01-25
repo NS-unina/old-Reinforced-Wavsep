@@ -103,7 +103,7 @@
   <br>
   
   
-  <B><a href="Case03-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-AnyPathReq-Read.jsp?target=<%=baseURL + FileConstants.DEFAULT_TARGET_FILE_INVALID %>">
+  <B><a href="Case03-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-AnyPathReq-Read.jsp?target=<%=baseURL + FileConstants.DEFAULT_TARGET_FILE %>">
    Case03-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-AnyPathReq-Read.jsp</a></B><br>
   RFI attack abusing the URL Class: injection into a filename context, using an unrestricted HTTP URL, default invalid input, without path requirements, and in the scope of a page with valid responses.<br>
   
@@ -147,7 +147,7 @@
   
   
   <B><a href="Case04-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultEmptyInput-AnyPathReq-Read.jsp?target=<%=FileConstants.EMPTY_INPUT %>">
-   Case04-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultEmptyInput-AnyPathReq-Read.jsp</a></B><br>
+    Case04-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultEmptyInput-AnyPathReq-Read.jsp</a></B><br>
   RFI attack abusing the URL Class: injection into a filename context, using an unrestricted HTTP URL, default empty input, without path requirements, and in the scope of a page with valid responses.<br>
   
   <TABLE border=1 cellspacing=0 cellpadding=2>
@@ -233,7 +233,7 @@
   <br>
   
   
-  <B><a href="Case06-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-NoProtocolReq-Read.jsp?target=<%=baseUrlWithoutProtocol + FileConstants.DEFAULT_TARGET_FILE_INVALID %>">
+  <B><a href="Case06-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-NoProtocolReq-Read.jsp?target=<%=baseUrlWithoutProtocol + FileConstants.DEFAULT_TARGET_FILE %>">
    Case06-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-NoProtocolReq-Read.jsp</a></B><br>
   RFI attack abusing the URL Class: injection into a filename context, using an unrestricted HTTP URL, default invalid input, without application full path support (no-path requirement), and in the scope of a page with valid responses.<br>
   Clarification: The test case concatenates a default full path prefix to the input received - preventing the direct injection of full application path (without traversal characters)<br>
