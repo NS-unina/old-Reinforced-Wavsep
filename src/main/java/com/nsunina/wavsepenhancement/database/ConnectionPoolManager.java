@@ -17,7 +17,7 @@ import org.apache.commons.dbcp.PoolableConnectionFactory;
 import org.apache.commons.dbcp.DriverManagerConnectionFactory;
 
 //TODO: cerca di capire se questo è necessario
-import com.mysql.jdbc.PreparedStatement;
+//import com.mysql.jdbc.PreparedStatement;
 import com.nsunina.wavsepenhancement.constants.DatabaseConstants;
 
 /**
