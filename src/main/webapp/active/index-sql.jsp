@@ -26,5 +26,11 @@
 <br><b>POST Input Vector - Experimental Test Cases: Insert / Delete / Other</b><br>
 <a href="SQL-Injection/SInjection-Detection-Evaluation-POST-200Error-Experimental/index.jsp">Evaluation of SQL Injection Detection Accuracy - POST - Erroneous 200 Responses - Exotic Test Cases</a><br><br>
 
+<br><b>SQL Injection - New Test Cases</b><br>
+<a href="SQL-Injection/SInjection-Detection-Evaluation-New-Cases-GET/index-New-Cases.jsp">SQL Injection Detection Accuracy - GET - New Cases</a><br><br>
+
+<a href="SQL-Injection/SInjection-Detection-Evaluation-New-Cases-POST/index-New-Cases.jsp">SQL Injection Detection Accuracy - POST - New Cases</a><br><br>
+
+
 </body>
 </html>
