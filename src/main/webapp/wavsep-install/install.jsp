@@ -511,7 +511,7 @@ if (request.getParameter("username") == null
 			
 			try {
 				//drop previous wavsep database user if exists
-				SqlString = "DROP USER '" + wavsepUsername + "'@'" + host + "'"; 
+				SqlString = "DROP USER '" + wavsepUsername + "'@'" + "%" + "'";
 				//since some versions of mysql do not support "if exists" functionality for drop user,
 				//this code will often throw an exception
 				pstmt = conn.prepareStatement(SqlString);	
@@ -524,7 +524,7 @@ if (request.getParameter("username") == null
 
 			//create wavsep database user
 			SqlString = 
-		          "CREATE USER '" + wavsepUsername + "'@'" + host + "' " + 
+		          "CREATE USER '" + wavsepUsername + "'@'" + "%" + "' " +
 		          "IDENTIFIED BY '" + wavsepPassword + "';";
 			pstmt = conn.prepareStatement(SqlString);	
 			result = pstmt.executeUpdate();
@@ -534,7 +534,7 @@ if (request.getParameter("username") == null
 		 	
 		 	//grant privileges to the wavsep user account on the wavsep database
 			SqlString = 
-		          "GRANT ALL PRIVILEGES ON " + wavsepDB + ".* to '" + wavsepUsername + "'@'" + host + "';";
+		          "GRANT ALL PRIVILEGES ON " + wavsepDB + ".* to '" + wavsepUsername + "'@'" + "%" + "';";
 			pstmt = conn.prepareStatement(SqlString);	
 			result = pstmt.executeUpdate();
 		 		 
