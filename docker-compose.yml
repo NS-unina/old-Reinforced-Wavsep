@@ -1,7 +1,8 @@
 version: '3.6'
 services:
   wavsep:
-    image: nsunina/wavsep-enhancement:v0.1-alpha
+    # image: nsunina/wavsep-enhancement:v0.1-alpha
+    build: .
     container_name: wavsep
     ports:
       - "127.0.0.1:8080:8080"
