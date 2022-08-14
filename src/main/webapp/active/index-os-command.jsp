@@ -10,10 +10,12 @@
 
 <center><H1>OS Command Injection - Test Cases:</H1></center>
 
-<br><b>GET Input Vector</b><br>
+<br><b>GET Input Vector, Text/HTML Valid Response Stream</b><br>
+<a href="OS-Command-Injection/OS-Command-Injection-GET-200Error/index.jsp">Evaluation of OS Command Injection Detection Accuracy - GET - Erroneous HTTP 500 Responses</a><br><br>
 <a href="OS-Command-Injection/OS-Command-Injection-GET-500Error/index.jsp">Evaluation of OS Command Injection Detection Accuracy - GET - Erroneous HTTP 500 Responses</a><br><br>
 
-<br><b>POST Input Vector</b><br>
+<br><b>POST Input Vector, Text/HTML Valid Response Stream</b><br>
+<a href="OS-Command-Injection/OS-Command-Injection-POST-200Error/index.jsp">Evaluation of OS Command Injection Detection Accuracy - POST - HTTP 200 Errors</a><br><br>
 <a href="OS-Command-Injection/OS-Command-Injection-POST-500Error/index.jsp">Evaluation of OS Command Injection Detection Accuracy - POST - Erroneous HTTP 500 Responses</a><br><br>
 
 </body>
