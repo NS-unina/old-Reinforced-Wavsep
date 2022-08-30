@@ -89,7 +89,7 @@ systemctl status mysql.service
 ## Usage    
 Run the environment with the modern or old-style approach, then the wavsep benchmark is available at the following link:   
 
-http://127.0.0.1:8080/wavsep/  
+http://127.0.0.1:18080/wavsep/  
 
 Use the `Makefile`:   
 * run the environmet:  `make up` 
