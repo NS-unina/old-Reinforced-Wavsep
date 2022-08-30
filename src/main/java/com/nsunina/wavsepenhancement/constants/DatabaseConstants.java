@@ -37,7 +37,7 @@ public final class DatabaseConstants {
      * @since 1.0.2
      */
     public static String CONNECTION_STRING_WITHOUT_CREDENTIALS =
-        "jdbc:mysql://localhost:3306/wavsepDB";
+        "jdbc:mysql://wavsepdb:3306/wavsepDB";
     /**
      * This constant is used to store the database account user name (dynamic).
      * @since 1.0.2
