@@ -123,7 +123,21 @@ Copyright © 2014, Shay Chen<br/>
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Please make sure to update tests as appropriate.
+Please make sure to update tests as appropriate.    
+
+## Citation
+If you find this code useful in your research, please, consider citing our paper:   
+``` 
+@inproceedings{Urbano2022,
+  doi = {10.1109/icecet55527.2022.9872956},
+  year = {2022},
+  month = jul,
+  publisher = {{IEEE}},
+  author = {Luigi Urbano and Gaetano Perrone and Simon Pietro Romano},
+  title = {Reinforced {WAVSEP}: a Benchmarking Platform for Web Application Vulnerability Scanners},
+  booktitle = {2022 International Conference on Electrical,  Computer and Energy Technologies ({ICECET})}
+}
+```
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
