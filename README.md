@@ -48,9 +48,22 @@ This evaluation platform contains a collection of unique vulnerable web pages th
 
 ## Installation 
 ### Modern approach
-Install docker and docker-compose: 
+1. Install docker and docker-compose: 
 - https://docs.docker.com/get-docker/ 
-- https://docs.docker.com/compose/install/   
+- https://docs.docker.com/compose/install/        
+
+2. Build the package   
+```  
+sudo apt install default-jdk maven
+
+``` 
+
+Then run: 
+``` 
+docker-compose up   # docker compose up   
+```   
+The wavsep will run on `http://127.0.0.1:18080` . 
+
 
 
 ### Old style approach
