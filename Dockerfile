@@ -4,4 +4,4 @@ WORKDIR /app
 RUN mvn package 
 
 FROM tomcat
-COPY --from=build /app/target/wavsep-enhancement-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/wavsep.war
+COPY --from=build /app/target/wavsep-enhancement-1.8-SNAPSHOT.war /usr/local/tomcat/webapps/wavsep.war
