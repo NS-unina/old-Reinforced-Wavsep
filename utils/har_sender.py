@@ -53,7 +53,7 @@ class HttpRequest:
         req_function = methods[self.method]
         if self.method == "POST":
             resp = req_function(self.url + self.path, proxies = {"http" : self.proxy, "https" : self.proxy}, verify = False, data = self.params, headers = self.headers)
-        else: 
+        else:
             resp = req_function(self.url + self.path, proxies = {"http" : self.proxy, "https" : self.proxy}, verify = False, params = self.params, headers = self.headers)
         return resp
 
@@ -93,7 +93,7 @@ def to_dict(l: list):
     """Generate a dictionary from an array
 
     Args:
-        l (list): A list 
+        l (list): A list
 
     Returns:
         dict: A dictionary
@@ -103,22 +103,18 @@ def to_dict(l: list):
         ret[i['name']] = i['value']
     return ret
 
-def send_har_entry(req, proxy):
+def send_request(req, proxy):
     req_function = methods[req.method]
     if req.method == "POST":
-        print(req.text)
-        # resp = req_function(req.url , proxies = {"http" : proxy, "https" : proxy}, verify = False, data = req.params, headers = to_dict(req.headers))
-    # else: 
-    #     resp = req_function(req.url, proxies = {"http" : proxy, "https" : proxy}, verify = False, headers = to_dict(req.headers))
-    # return resp
+        resp = requests.post(req.url , proxies = {"http" : proxy, "https" : proxy}, verify = False, data = req.body, headers = req.headers, allow_redirects=False)
+    else:
+        resp = req_function(req.url, proxies = {"http" : proxy, "https" : proxy}, verify = False, headers = req.headers)
+    return resp
 
 
 def send_from_har(har_file, proxy):
     requests = HarParser.from_file(har_file)
-    print(requests)
-    # the_page = har_parser.pages[0]
-    # for entry in the_page.entries:
-    #     req = entry.request
-    #     # print("Send {}".format(req.url))
-    #     send_har_entry(req, proxy)
+    for r in requests:
+        print("Send {}".format(r.url))
+        send_request(r, proxy)
 

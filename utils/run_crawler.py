@@ -2,30 +2,28 @@ import os
 import sys
 
 from har_sender import send_from_har
-
+HAR_FOLDER = "har_requests"
 
 
 
 def usage():
-    print("[-] Usage: run_crawler.py <host> <port>")
+    print("[-] Usage: run_crawler.py <category> <har_file> <host> <port>")
     sys.exit(-1)
 
-if len(sys.argv) == 3:
-    host = sys.argv[1]
-    port = sys.argv[2]
-
-elif len(sys.argv) == 1:
-    host = None 
-    port = None
-
-else: 
+host = None
+port = None
+if len(sys.argv) < 3:
     usage()
+category = sys.argv[1]
+filename = sys.argv[2]
+
+if len(sys.argv) == 5:
+    host = sys.argv[3]
+    port = sys.argv[4]
 
 
-# WAVSEP_TARGET = "http://127.0.0.1:18080/wavsep"
+filepath = os.path.join(HAR_FOLDER, category, filename)
 
-# request = HttpRequest.get(WAVSEP_TARGET)
-# resp = request.send()
-# print(resp.text)
+print("[+] Scanning {} har file ".format(filepath))
 
-send_from_har(os.path.join("har_requests", "xss", "RXSS-Detection-Evaluation-POST.har"), "http://{}:{}".format(host, port))
+send_from_har(filepath, "http://{}:{}".format(host, port) if host else None)
