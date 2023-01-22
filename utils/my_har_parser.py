@@ -1,4 +1,15 @@
 import json 
+import os
+import typer
+
+def my_function(arg1: str, arg2: int, opt_arg1: str = "default1", opt_arg2: int = 0):
+    typer.echo(f"arg1: {arg1}")
+    typer.echo(f"arg2: {arg2}")
+    typer.echo(f"opt_arg1: {opt_arg1}")
+    typer.echo(f"opt_arg2: {opt_arg2}")
+
+
+HAR_FOLDER = "har_requests"
 
 def to_dict(l: list):
     """Generate a dictionary from an array
@@ -23,6 +34,31 @@ class Request:
         self.headers = to_dict(headers)
         self.body = body
 # class HarEntry:
+
+def get_har_file(category, filename):
+    return os.path.join(HAR_FOLDER, category, filename)
+
+def get_categories():
+    return os.listdir(HAR_FOLDER)
+
+
+def _get_har_sessions(category):
+    print(category)
+    return [f for f in os.listdir(os.path.join(HAR_FOLDER, category)) if os.path.isfile(os.path.join(HAR_FOLDER, category, f))] 
+
+
+def get_har_sessions(category = None):
+    sessions = {}
+    if category is None: 
+        categories = get_categories()
+        for c in categories: 
+            sessions[c] = _get_har_sessions(c)
+    else: 
+        sessions[category] = _get_har_sessions(category)
+
+    return sessions
+
+
 
 
 class HarParser:

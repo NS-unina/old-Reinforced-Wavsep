@@ -1,29 +1,45 @@
 import os
 import sys
 
+import argparse
+
+
 from har_sender import send_from_har
-HAR_FOLDER = "har_requests"
+from my_har_parser import get_har_file, get_categories,get_har_sessions
 
 
+parser = argparse.ArgumentParser(description='Run crawler')
+parser.add_argument('host', nargs='?', default="")
+parser.add_argument('port', nargs='?', default="")
+parser.add_argument('category', nargs='?', default="")
+parser.add_argument('harfile', nargs='?', default="")
+
+args = parser.parse_args()
+
+
+
+
+def e():
+    sys.exit(-1)
 
 def usage():
     print("[-] Usage: run_crawler.py <category> <har_file> <host> <port>")
-    sys.exit(-1)
+    e()
 
-host = None
-port = None
-if len(sys.argv) < 3:
-    usage()
-category = sys.argv[1]
-filename = sys.argv[2]
+har_sessions = {}
+if args.category == None: 
+    har_sessions = get_har_sessions()
 
-if len(sys.argv) == 5:
-    host = sys.argv[3]
-    port = sys.argv[4]
+elif args.harfile == '': 
+    har_sessions = get_har_sessions(args.category)
+
+else: 
+    har_sessions[args.category] = [args.harfile]
 
 
-filepath = os.path.join(HAR_FOLDER, category, filename)
-
-print("[+] Scanning {} har file ".format(filepath))
-
-send_from_har(filepath, "http://{}:{}".format(host, port) if host else None)
+for category, sessions in har_sessions.items():
+    for s in sessions:
+        filepath = get_har_file(category, s)
+        print(filepath)
+        print("[+] Scanning {} har file ".format(filepath))
+        send_from_har(filepath, "http://{}:{}".format(args.host, args.port) if args.host else None)
